@@ -1,25 +1,26 @@
+// Declare and initialize the variable firstName = “Harry”.
+
+// Declare and initialize the variable lastName = “Grow”.
+
+// Declare and initialize the variable email = “harry.grow@example.com”.
+
+// Using the method toLowerCase() and the + operator, concatenate firstName and lastName after converting it to lowercase, then assign it to the variable username. Hint: The variable username should contain “harrygrow”.
+
+// Correct the email address from “example.com” to “gmail.com”. Hint: Use the replace() method to change the email address to “harry.grow@gmail.com”.
+
+// Find the index of ‘@’ in the email address. You can use the indexOf() method for this purpose.
+
+
 public class stringChallenge {
     public static void main(String[] args) {
-        String text = "Adventure";
-        // TODO: Check the length using length() and print the length
-        System.out.println("Length of string: " + text.length());
-        // TODO: Get the character at position 3 and print the character 
-        System.out.println("character at position 3: " + text.charAt(3));      
-        // TODO: Get a part of the String from position 1 to 4 and print the string
-        System.out.println("String from position 1 to 4: " + text.substring(1,4));
-
-        String anotherText= "Adventure";
-        // TODO: Compare text with anotherText using equals() and print the output
-        boolean comparedText = text.equals(anotherText);
-        System.out.println("Compare text with anotherText is: " + comparedText);
-        // TODO: Change to uppercase using toUpperCase() and print the converted string
-        System.out.println("Uppercase: " + text.toUpperCase());
-        // TODO: Change to lowercase using toLowerCase() and print the converted string
-        System.out.println("Lowercase: " + text.toLowerCase());
-        // TODO: Check if it contains "vent" using contains() and print the output
-        boolean isContains = text.contains("vent");
-        System.out.println("It contains (vent): " + isContains);
-        // TODO: Replace 'e' with 'a' and print the output
-        System.out.println("New String after replacing a character: " + text.replace('e','a'));
+        String firstName = "Harry";
+        String lastName = "Grow";
+        String email = "harry.grow@example.com";
+        String username = firstName.toLowerCase() + lastName.toLowerCase();
+        System.out.println("Username: " + username);
+        String correctedEmail = email.replace("example.com", "gmail.com");
+        System.out.println("Corrected Email: " + correctedEmail);
+        int atIndex = correctedEmail.indexOf('@');
+        System.out.println("Index of '@': " + atIndex);
     }
 }
