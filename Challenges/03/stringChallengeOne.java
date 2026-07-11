@@ -1,5 +1,8 @@
 public class stringChallengeOne {
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
          // Declare and initialize an array of superhero names
         String[] superheroes = {"Batman", "Superman", "Wonder Woman", "Spider-Man", "Iron Man"};
@@ -16,7 +19,7 @@ public class stringChallengeOne {
 
         // Print the introduction years
         System.out.println("Introduction Years:");
-        //TODO 2: Print the introductionYear of the superheroes.
+        // TODO 2: Print the introductionYear of the superheroes.
         System.out.println(introductionYears[0]);
         System.out.println(introductionYears[1]);
         System.out.println(introductionYears[2]);
